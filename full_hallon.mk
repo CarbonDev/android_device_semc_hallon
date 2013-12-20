@@ -28,3 +28,6 @@ PRODUCT_DEVICE := hallon
 PRODUCT_BRAND := SEMC
 PRODUCT_MANUFACTURER := SEMC
 PRODUCT_MODEL := Xperia Neo
+
+$(call inherit-product, device/semc/hallon/hallon.mk)
+$(call inherit-product-if-exists, vendor/semc/hallon/hallon-vendor.mk)
